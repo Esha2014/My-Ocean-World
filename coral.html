@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coral Reefs | My Ocean World</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        #loadingScreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            background: linear-gradient(135deg, #004e70, #007ea7, #00b4d8);
+        }
+
+        #mainWebsite {
+            display: none;
+        }
+
+        .coral-hero {
+            padding: 90px 20px;
+            color: white;
+            text-align: center;
+            background:
+                linear-gradient(rgba(0, 78, 112, 0.65), rgba(0, 174, 239, 0.7)),
+                url("https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=1600&q=80")
+                center/cover;
+        }
+
+        .coral-hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .coral-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .info-card {
+            height: 100%;
+            padding: 25px;
+            background-color: white;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .fact-box {
+            padding: 30px;
+            color: white;
+            text-align: center;
+            background: linear-gradient(135deg, #007ea7, #00b4d8);
+            border-radius: 10px;
+        }
+
+        .fact-box h3 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loadingScreen">
+        <div>
+            <div class="spinner-border text-light mb-4"
+                 style="width: 70px; height: 70px;"
+                 role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+
+            <h2>Exploring the coral reef...</h2>
+            <p>Preparing a colourful underwater adventure! 🪸</p>
+        </div>
+    </div>
+
+    <div id="mainWebsite">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container">
+                <a class="navbar-brand font-weight-bold" href="index.html">
+                    🌊 Ocean World
+                </a>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="animals.html">Sea Animals</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="coral.html">Coral Reefs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="facts.html">Ocean Facts</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="coral-hero">
+            <div class="container">
+                <h1>Discover Coral Reefs 🪸</h1>
+                <p class="lead mb-0">
+                    Explore the colourful underwater cities that support ocean life.
+                </p>
+            </div>
+        </header>
+
+        <main class="container py-4">
+            <section class="row align-items-center">
+                <div class="col-md-6 mb-4">
+                    <img
+                        src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=1000&q=80"
+                        class="coral-image"
+                        alt="Colourful coral reef underwater">
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="info-card">
+                        <h2 class="section-title mt-0">What Are Coral Reefs?</h2>
+                        <p>
+                            Coral reefs are underwater ecosystems built by tiny animals
+                            called coral polyps. Over time, these polyps create hard
+                            skeletons that form large reef structures.
+                        </p>
+                        <p>
+                            Reefs provide shelter, food, and breeding areas for thousands
+                            of fish and other marine animals.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <h2 class="section-title">Why Coral Reefs Matter</h2>
+
+            <section class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="info-card">
+                        <h3>🐠 Homes for Animals</h3>
+                        <p>
+                            Coral reefs provide a safe habitat for fish, turtles, crabs,
+                            sea stars, and many other ocean animals.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="info-card">
+                        <h3>🌊 Protect Coastlines</h3>
+                        <p>
+                            Reefs help reduce the power of waves and protect coastal
+                            communities from storms and erosion.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="info-card">
+                        <h3>🌍 Support People</h3>
+                        <p>
+                            Healthy reefs support fishing, tourism, food supplies, and
+                            jobs for communities around the world.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fact-box my-4">
+                <h3>Did You Know? 🪸</h3>
+                <p class="mb-0">
+                    Coral reefs cover less than one percent of the ocean floor, but they
+                    support about 25 percent of all marine species.
+                </p>
+            </section>
+
+            <h2 class="section-title">How Can We Protect Coral Reefs?</h2>
+
+            <section class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="info-card">
+                        <h3>♻️ Reduce Pollution</h3>
+                        <p>
+                            Use less plastic, recycle properly, and keep rubbish away
+                            from beaches and waterways.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="info-card">
+                        <h3>🌱 Make Sustainable Choices</h3>
+                        <p>
+                            Choose sustainable seafood and support organisations that
+                            protect marine habitats.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="text-center my-4">
+                <a href="animals.html" class="btn btn-primary mr-2">
+                    Explore Sea Animals
+                </a>
+                <a href="index.html" class="btn btn-info">
+                    Return Home
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p class="mb-0">
+                © 2026 My Ocean World | Discover • Explore • Protect
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.getElementById("loadingScreen").style.display = "none";
+                document.getElementById("mainWebsite").style.display = "block";
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
