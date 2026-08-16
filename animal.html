@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sea Animals | My Ocean World</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        #loadingScreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            background: linear-gradient(135deg, #004e70, #007ea7, #00b4d8);
+        }
+
+        #mainWebsite {
+            display: none;
+        }
+
+        .shark-hero {
+            padding: 80px 20px;
+            color: white;
+            text-align: center;
+            background: linear-gradient(
+                rgba(0, 78, 112, 0.8),
+                rgba(0, 174, 239, 0.8)
+            ),
+            url("https://images.unsplash.com/photo-1560275619-4662e36fa65c?auto=format&fit=crop&w=1600&q=80")
+            center/cover;
+        }
+
+        .shark-hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .animal-buttons {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .animal-buttons .btn {
+            min-width: 150px;
+            margin: 5px;
+        }
+
+        .animal-content {
+            display: none;
+        }
+
+        .animal-content.active {
+            display: block;
+        }
+
+        .content-card {
+            height: 100%;
+            padding: 25px;
+            background-color: white;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .animal-image {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .fact-list li {
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loadingScreen">
+        <div>
+            <div class="spinner-border text-light mb-4"
+                 style="width: 70px; height: 70px;"
+                 role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+
+            <h2>Exploring the ocean...</h2>
+            <p>Preparing amazing sea animals! 🌊</p>
+        </div>
+    </div>
+
+    <div id="mainWebsite">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container">
+                <a class="navbar-brand font-weight-bold" href="index.html">
+                    🌊 Ocean World
+                </a>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="animals.html">Sea Animals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coral.html">Coral Reefs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="facts.html">Ocean Facts</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="shark-hero">
+            <div class="container">
+                <h1>Meet Amazing Sea Animals 🐠</h1>
+                <p class="lead mb-0">
+                    Choose an animal to discover more about life beneath the waves.
+                </p>
+            </div>
+        </header>
+
+        <main class="container py-4">
+            <div class="animal-buttons">
+                <button class="btn btn-primary active" data-animal="shark">
+                    🦈 Sharks
+                </button>
+
+                <button class="btn btn-success" data-animal="turtle">
+                    🐢 Sea Turtles
+                </button>
+
+                <button class="btn btn-info" data-animal="octopus">
+                    🐙 Octopuses
+                </button>
+            </div>
+
+            <section id="shark" class="animal-content active">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4">
+                        <img
+                            src="https://images.unsplash.com/photo-1560275619-4662e36fa65c?auto=format&fit=crop&w=1000&q=80"
+                            class="animal-image"
+                            alt="Shark swimming underwater">
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="content-card">
+                            <h2 class="section-title mt-0">All About Sharks 🦈</h2>
+                            <p>
+                                Sharks are ancient fish that have lived in Earth's oceans
+                                for more than 400 million years.
+                            </p>
+                            <p>
+                                They help keep marine ecosystems healthy by controlling
+                                populations of other sea animals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="content-card">
+                            <h3>🦷 Powerful Teeth</h3>
+                            <p>
+                                Sharks have several rows of teeth. Lost teeth are replaced
+                                by new teeth from behind.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="content-card">
+                            <h3>🌊 Great Senses</h3>
+                            <p>
+                                Sharks can detect movement in the water and sense electrical
+                                signals from other animals.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="content-card">
+                            <h3>⏳ Ancient Animals</h3>
+                            <p>
+                                Sharks appeared millions of years before dinosaurs and have
+                                survived many changes on Earth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="turtle" class="animal-content">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4">
+                        <img
+                            src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?auto=format&fit=crop&w=1000&q=80"
+                            class="animal-image"
+                            alt="Green sea turtle swimming underwater">
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="content-card">
+                            <h2 class="section-title mt-0">All About Sea Turtles 🐢</h2>
+                            <p>
+                                Sea turtles are reptiles that spend most of their lives
+                                swimming through warm and cool ocean waters.
+                            </p>
+                            <p>
+                                They travel long distances and return to beaches to lay
+                                their eggs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="content-card">
+                            <h3>🐚 Strong Shells</h3>
+                            <p>
+                                A sea turtle's shell protects its body from danger and
+                                helps it survive in the ocean.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="content-card">
+                            <h3>🌍 Long Journeys</h3>
+                            <p>
+                                Sea turtles can migrate thousands of kilometres between
+                                feeding and nesting areas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="content-card">
+                            <h3>🌿 Ocean Helpers</h3>
+                            <p>
+                                Green sea turtles help keep seagrass habitats healthy
+                                by feeding on seagrass.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="octopus" class="animal-content">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4">
+                        <img
+                            src="https://images.unsplash.com/photo-1545671913-b89ac1b4ac10?auto=format&fit=crop&w=1000&q=80"
+                            class="animal-image"
+                            alt="Octopus underwater">
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="content-card">
+                            <h2 class="section-title mt-0">All About Octopuses 🐙</h2>
+                            <p>
+                                Octopuses are intelligent sea animals with eight arms
+                                covered in powerful suction cups.
+                            </p>
+                            <p>
+                                They can squeeze through tiny spaces and use camouflage
+                                to hide from predators.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="content-card">
+                            <h3>🎨 Colour Changing</h3>
+                            <p>
+                                Octopuses can change their colour and skin texture to
+                                blend into their surroundings.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="content-card">
+                            <h3>🧠 Very Intelligent</h3>
+                            <p>
+                                Octopuses can solve puzzles, remember solutions, and
+                                learn from their surroundings.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="content-card">
+                            <h3>💨 Ink Defence</h3>
+                            <p>
+                                When threatened, an octopus can release a cloud of ink
+                                to confuse predators and escape.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p class="mb-0">
+                © 2026 My Ocean World | Discover • Explore • Protect
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.getElementById("loadingScreen").style.display = "none";
+                document.getElementById("mainWebsite").style.display = "block";
+            }, 1500);
+        });
+
+        document.querySelectorAll("[data-animal]").forEach(function (button) {
+            button.addEventListener("click", function () {
+                document.querySelectorAll(".animal-content").forEach(function (section) {
+                    section.classList.remove("active");
+                });
+
+                document.querySelectorAll("[data-animal]").forEach(function (item) {
+                    item.clas
