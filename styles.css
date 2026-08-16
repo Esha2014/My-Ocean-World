@@ -1,0 +1,124 @@
+body {
+    background-color: #e8f8ff;
+    font-family: Arial, sans-serif;
+}
+
+#nameScreen,
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#nameScreen {
+    display: flex;
+    background: linear-gradient(135deg, #004e70, #007ea7, #00b4d8);
+    z-index: 10000;
+}
+
+.name-box {
+    width: 90%;
+    max-width: 550px;
+    padding: 45px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.name-box h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.name-box p {
+    font-size: 19px;
+}
+
+#loadingScreen {
+    display: none;
+    background: linear-gradient(135deg, #006994, #00a6d6, #63d9ef);
+    z-index: 9999;
+}
+
+.loading-spinner {
+    width: 70px;
+    height: 70px;
+}
+
+#loadingScreen h2 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#mainWebsite {
+    display: none;
+}
+
+.navbar {
+    background-color: #006994;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    background-color: #008acb;
+    border-radius: 5px;
+}
+
+.welcome-section {
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(
+        rgba(0, 105, 148, 0.8),
+        rgba(0, 174, 239, 0.8)
+    );
+}
+
+.welcome-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.welcome-section p {
+    font-size: 20px;
+}
+
+.section-title {
+    margin: 40px 0 20px;
+    color: #006994;
+    font-weight: bold;
+}
+
+.card {
+    margin-bottom: 25px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background-color: #006994;
+}
