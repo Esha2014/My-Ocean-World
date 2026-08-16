@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ocean Facts | My Ocean World</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        #loadingScreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            background: linear-gradient(135deg, #004e70, #007ea7, #00b4d8);
+        }
+
+        #mainWebsite {
+            display: none;
+        }
+
+        .facts-hero {
+            padding: 90px 20px;
+            color: white;
+            text-align: center;
+            background:
+                linear-gradient(rgba(0, 78, 112, 0.7), rgba(0, 174, 239, 0.7)),
+                url("https://images.unsplash.com/photo-1484291470158-b8f8d608850d?auto=format&fit=crop&w=1600&q=80")
+                center/cover;
+        }
+
+        .facts-hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .fact-card {
+            height: 100%;
+            padding: 28px;
+            background: white;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+        }
+
+        .fact-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .fact-icon {
+            font-size: 42px;
+        }
+
+        .fact-card h3 {
+            margin-top: 15px;
+            color: #006994;
+            font-weight: bold;
+        }
+
+        .fun-fact {
+            padding: 35px;
+            color: white;
+            text-align: center;
+            background: linear-gradient(135deg, #007ea7, #00b4d8);
+            border-radius: 10px;
+        }
+
+        .fun-fact h2 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loadingScreen">
+        <div>
+            <div class="spinner-border text-light mb-4"
+                 style="width: 70px; height: 70px;"
+                 role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+
+            <h2>Discovering ocean facts...</h2>
+            <p>Preparing some amazing underwater knowledge! 🌊</p>
+        </div>
+    </div>
+
+    <div id="mainWebsite">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container">
+                <a class="navbar-brand font-weight-bold" href="index.html">
+                    🌊 Ocean World
+                </a>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="animals.html">Sea Animals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coral.html">Coral Reefs</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="facts.html">Ocean Facts</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="facts-hero">
+            <div class="container">
+                <h1>Fun Ocean Facts 🌊</h1>
+                <p class="lead mb-0">
+                    Learn fascinating facts about the ocean and sea animals.
+                </p>
+            </div>
+        </header>
+
+        <main class="container py-4">
+            <h2 class="section-title">Amazing Ocean Facts</h2>
+
+            <section class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="fact-card text-center">
+                        <div class="fact-icon">🌍</div>
+                        <h3>Most of Earth</h3>
+                        <p>
+                            Oceans cover more than 70% of Earth's surface and contain
+                            most of the planet's water.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="fact-card text-center">
+                        <div class="fact-icon">🌊</div>
+                        <h3>Deep Waters</h3>
+                        <p>
+                            The deepest known part of the ocean is the Mariana Trench,
+                            which is deeper than Mount Everest is tall.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="fact-card text-center">
+                        <div class="fact-icon">💨</div>
+                        <h3>Ocean Oxygen</h3>
+                        <p>
+                            Tiny ocean plants called phytoplankton produce a large
+                            amount of the oxygen we breathe.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <h2 class="section-title">Fun Sea Animal Facts</h2>
+
+            <section class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="fact-card text-center">
+                        <div class="fact-icon">🦈</div>
+                        <h3>Sharks</h3>
+                        <p>
+                            Sharks have existed for more than 400 million years,
+                            long before the dinosaurs appeared.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="fact-card text-center">
+                        <div class="fact-icon">🐢</div>
+                        <h3>Sea Turtles</h3>
+                        <p>
+                            Some sea turtles can travel thousands of kilometres and
+                            return to the beach where they were born.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="fact-card text-center">
+                        <div class="fact-icon">🐙</div>
+                        <h3>Octopuses</h3>
+                        <p>
+                            Octopuses have three hearts, blue blood, and eight arms
+                            covered with suction cups.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fun-fact my-4">
+                <h2>Did You Know? 🐋</h2>
+                <p class="mb-0">
+                    The blue whale is the largest animal ever known to have lived
+                    on Earth. Its heart can be as large as a small car!
+                </p>
+            </section>
+
+            <h2 class="section-title">More Interesting Facts</h2>
+
+            <section class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="fact-card">
+                        <h3>🐬 Dolphins</h3>
+                        <p>
+                            Dolphins communicate using clicks, whistles, and body
+                            movements. They can also recognise themselves in mirrors.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="fact-card">
+                        <h3>🪼 Jellyfish</h3>
+                        <p>
+                            Jellyfish have no bones, brain, or heart. They use their
+                            tentacles to catch food and protect themselves.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="fact-card">
+                        <h3>⭐ Starfish</h3>
+                        <p>
+                            Starfish are not actually fish. They are animals that can
+                            regrow some of their lost arms.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="fact-card">
+                        <h3>🪸 Coral Reefs</h3>
+                        <p>
+                            Coral reefs are home to about 25% of all marine species,
+                            even though they cover less than 1% of the ocean floor.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="text-center my-4">
+                <a href="animals.html" class="btn btn-primary mr-2">
+                    Explore Sea Animals
+                </a>
+                <a href="index.html" class="btn btn-info">
+                    Return Home
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p class="mb-0">
+                © 2026 My Ocean World | Discover • Explore • Protect
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.getElementById("loadingScreen").style.display = "none";
+                document.getElementById("mainWebsite").style.display = "block";
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
