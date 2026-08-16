@@ -341,4 +341,13 @@
                 });
 
                 document.querySelectorAll("[data-animal]").forEach(function (item) {
-                    item.clas
+                    item.clas.remove("active");
+                });
+
+                document.getElementById(button.dataset.animal).classList.add("active");
+                button.classList.add("active");
+            });
+        });
+    </script>
+</body>
+</html>
