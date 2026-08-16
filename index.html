@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Ocean World</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="nameScreen">
+        <div class="name-box">
+            <h1>🌊 My Ocean World</h1>
+            <p class="mt-3">Welcome, explorer!</p>
+            <p>Before you enter our ocean world, tell us your name.</p>
+
+            <form id="nameForm">
+                <div class="form-group mt-4">
+                    <input
+                        type="text"
+                        id="visitorName"
+                        class="form-control form-control-lg"
+                        placeholder="Enter your name"
+                        autocomplete="off"
+                        required>
+                </div>
+
+                <button type="submit" class="btn btn-light btn-lg">
+                    Enter Ocean World 🌊
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div id="loadingScreen">
+        <div>
+            <div class="spinner-border text-light loading-spinner" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+
+            <h2>Diving into Ocean World...</h2>
+            <p>Get ready for an underwater adventure! 🦈</p>
+        </div>
+    </div>
+
+    <div id="mainWebsite">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container">
+                <a class="navbar-brand font-weight-bold" href="index.html">
+                    🌊 Ocean World
+                </a>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="animals.html">Sea Animals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coral.html">Coral Reefs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="facts.html">Ocean Facts</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="welcome-section">
+            <div class="container">
+                <h1 id="welcomeMessage">Welcome to My Ocean World! 🌊</h1>
+                <p>
+                    Discover amazing sea animals, colourful coral reefs,
+                    and fascinating secrets beneath the waves.
+                </p>
+            </div>
+        </section>
+
+        <main class="container">
+            <h2 class="section-title">🦈 Amazing Sea Animals</h2>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img
+                            src="https://images.unsplash.com/photo-1560275619-4662e36fa65c?auto=format&fit=crop&w=900&q=80"
+                            class="card-img-top"
+                            alt="Shark swimming underwater"
+                            loading="lazy">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Shark</h5>
+                            <p class="card-text">
+                                Sharks are powerful marine predators that
+                                help keep ocean ecosystems balanced.
+                            </p>
+                            <a href="animals.html" class="btn btn-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img
+                            src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?auto=format&fit=crop&w=900&q=80"
+                            class="card-img-top"
+                            alt="Green sea turtle underwater"
+                            loading="lazy">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Sea Turtle</h5>
+                            <p class="card-text">
+                                Sea turtles travel across oceans and return
+                                to beaches to lay eggs.
+                            </p>
+                            <a href="animals.html" class="btn btn-success">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img
+                            src="https://images.unsplash.com/photo-1545671913-b89ac1b4ac10?auto=format&fit=crop&w=900&q=80"
+                            class="card-img-top"
+                            alt="Octopus underwater"
+                            loading="lazy">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Octopus</h5>
+                            <p class="card-text">
+                                Octopuses have eight arms and can change
+                                their colour.
+                            </p>
+                            <a href="animals.html" class="btn btn-info">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">🪸 Discover Coral Reefs</h2>
+
+            <div class="jumbotron">
+                <h3>Life Beneath the Waves</h3>
+                <p>
+                    Coral reefs are colourful underwater ecosystems that
+                    provide homes for thousands of marine animals.
+                </p>
+                <a href="coral.html" class="btn btn-primary">
+                    Explore Coral Reefs
+                </a>
+            </div>
+
+            <h2 class="section-title">📖 Explore More Ocean Pages</h2>
+
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#">Previous</a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link" href="index.html">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="animals.html">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="coral.html">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="facts.html">Next</a>
+                </li>
+            </ul>
+        </main>
+
+        <footer>
+            <p class="mb-0">
+                © 2026 My Ocean World | Discover • Explore • Protect
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
